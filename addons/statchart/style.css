@@ -1,0 +1,98 @@
+/* lorsque l'on passe la souris sur le graphique, la soruis devient par default */
+#graph:hover{
+    cursor: default;
+}
+
+@media only screen and (min-width: 767px) {
+
+    #chart{
+        width : 600px;
+        height : 400px;
+    }
+    #statsPanel{
+            left: 30rem;
+    }
+}
+
+
+
+/* Page (panel)*/
+#statsPanel {
+    position: fixed;
+    top: calc(60vh - 300px);
+    z-index: 900;
+    max-width: 50rem;
+    background-color: #FFFFFF;
+    display: true;
+    border: none !important;
+    padding: 1.5rem;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%), 0 2px 20px 0 rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+/* Icône pour fermer le panel */
+a.closeStats {
+    font-size: 40px;
+    font-weight: 400;
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    cursor: default;
+}
+/* changer la te pointeur lorsque la souris passe dessus  */
+a:hover{
+    cursor:pointer;
+}
+
+/* header (titre + logo) */
+.statsHeader {
+    margin: 5px;
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+/* logo à cote du titre  */
+.statsHeader svg {
+    vertical-align: -2px;
+    color: #5f5f5f;
+    margin-right: 5px;
+}
+
+/* Titre */
+.titleHeader {
+    font-size: 18px;
+    font-weight: 500;
+    color: #5f5f5f;
+    margin-bottom: 8px;
+}
+
+
+
+
+/* mobile  */
+@media only screen and (max-width: 767px) {
+    #chart {
+        width: 280px;
+        height: 400px;
+    }
+
+    #statsPanel {
+        left: 1rem;
+    }
+
+}
+
+/* mobile paysage  */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    #chart {
+            width: 380px;
+            height: 300px;
+        }
+    
+}
+
+/* fin dev mobile */

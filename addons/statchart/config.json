@@ -1,0 +1,7 @@
+{
+    "js": ["statchart.js","jquery.easyDrag.min.js","echarts.js","chart.js"],
+    "css": ["style.css","jquery-ui.min.css"],
+    "html": "statchart.html",
+    "target": "page-content-wrapper"
+    
+}
