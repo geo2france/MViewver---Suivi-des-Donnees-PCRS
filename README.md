@@ -119,3 +119,16 @@ Fichier apps/default.xml
 
 Le fichier de configuration permet la personnalisation des thèmes/couches du visualiseur ; une configuration par
 défaut est fournie dans `apps/default.xml`, vous pouvez le dupliquer et l'adapter à vos besoins en vous aidant de la [documentation.](http://mviewerdoc.readthedocs.io/fr/latest/)
+
+## Plugin PCRS
+
+Plugin qui permet d'ajouter une fenêtre avec des indicateurs de suivi (PVA, Aéro, Contrôles, Ortho) en % du territoire.
+
+### Installation plugin PCRS
+Ajouter le dossier du custom component dans le dossier « Addons » situé à la racine du projet Mviewver. [addons](./addons)
+
+Dans [default.xml](./apps/pcrs.xml) rajouter cette ligne ci-dessous entre la balise « themes » et « config ».
+``` xml
+<extension type="component" id="statchart" path="./addons"/>
+```
+
