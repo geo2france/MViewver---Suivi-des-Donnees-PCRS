@@ -1,3 +1,7 @@
+
+Le projet MViewver permet d'afficher l'avancement des données PCR pour les différentes zones.
+
+
 MVIEWER
 =============
 
